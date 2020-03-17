@@ -6,8 +6,8 @@ public class Noeuds {
 	private int id;
 	private int capacite;
 	private ArrayList<Integer> listeIdDonnee;
-	private ArrayList<Integer> listeNoeudUtilisateur;
-	
+	private ArrayList<Noeuds> listeNoeudUtilisateur;
+	private ArrayList<Utilisateur> listeUtilisateur;
 	
 
 	public Noeuds(int capacite) {
@@ -15,7 +15,8 @@ public class Noeuds {
 		this.id=cpt;
 		this.capacite = capacite;
 		listeIdDonnee= new ArrayList<Integer>();
-		listeNoeudUtilisateur= new ArrayList<Integer>();
+		listeNoeudUtilisateur= new ArrayList<Noeuds>();
+		listeUtilisateur= new ArrayList<Utilisateur>();
 	}
 
 
